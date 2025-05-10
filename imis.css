@@ -10,31 +10,31 @@
   border:    none        !important;
 }
 
-/* 1a. Restore auto-width on the very first header cell */
+/* 1a. First header cell auto-width */
 .RadGrid .rgMasterTable tr > th:first-child {
   width: auto            !important;
 }
 
 /* 2. TextButton Links */
 .RadGrid a.TextButton {
-  font-size:   12px      !important;
+  font-size:   12px    !important;
   display:     inline-block !important;
-  box-shadow:  none      !important;
+  box-shadow:  none    !important;
 }
 .RadGrid .rgRow td a.TextButton,
 .RadGrid .rgAltRow td a.TextButton {
-  font-size:   10px      !important;
-  white-space: nowrap    !important;
+  font-size:   10px    !important;
+  white-space: nowrap  !important;
 }
 
 /* 3. Cell & Row Styling */
 .RadGrid .rgRow td,
 .RadGrid .rgAltRow td {
-  border:        0.5px solid #ccc !important;
-  white-space:   nowrap    !important;
-  overflow:      hidden    !important;
-  text-overflow: ellipsis  !important;
-  vertical-align: top      !important;
+  border:          0.5px solid #ccc !important;
+  white-space:     nowrap   !important;
+  overflow:        hidden   !important;
+  text-overflow:   ellipsis !important;
+  vertical-align:  top      !important;
 }
 .RadGrid .rgRow:hover,
 .RadGrid .rgAltRow:hover {
@@ -48,35 +48,20 @@
   white-space: nowrap !important;
 }
 
-/* 5. Global MetroTouch scroll constraints */
+/* 5. MetroTouch grid wrapper: no scrolling here */
 .RadGrid_MetroTouch {
-  /* now only horizontal scroll on the table itself */
-  overflow-x: auto  !important;
-  max-height: 600px !important;
+  overflow: visible   !important;
+  max-height: none    !important;
 }
 
-/* 5a. Sorted-column link styling */
-.RadGrid.RadGrid_MetroTouch th.rgSorted a {
-  background: none  !important;
-  color:      white !important;
-}
-
-/* 5b. Sort icons reset */
-.RadGrid_MetroTouch .rgHeader .rgSortAsc,
-.RadGrid_MetroTouch .rgHeader .rgSortDesc {
-  float:  none !important;
-  margin: 0    !important;
-}
-
-/* 6. MasterTable: make the table itself scrollable inside its container */
+/* 6. MasterTable: both scrollbars on the TABLE itself */
 .RadGrid_MetroTouch .rgMasterTable {
-  display:       block      !important; /* allow its own scrollbars */
-  width:         100%        !important; /* always fill its wrapper */
-  max-width:     100%        !important; /* never exceed wrapper */
-  table-layout:  auto        !important; /* natural column sizing */
-  overflow-x:    auto        !important; /* horizontal scroll if needed */
-  max-height:    600px       !important; /* preserve MetroTouch height cap */
-  border-collapse: separate !important;
+  display:       block      !important;  /* make the table a scrollable block */
+  width:         100%        !important; /* always fill its container */
+  max-height:    600px       !important; /* cap its height so it can scroll vertically */
+  overflow:      auto       !important;  /* show both x- and y-scrollbars as needed */
+  border-collapse: separate !important;  /* preserve your borders */
+  table-layout:  auto       !important;  /* natural column sizing */
 }
 
 /* 7. Sticky Header */
@@ -115,15 +100,14 @@
 }
 
 /* 10. Truncate column 3 to ~90 characters + ellipsis */
-#ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_Grid1_ctl00  
-  th:nth-child(3),
-#ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_Grid1_ctl00  
-  td:nth-child(3) {
-  max-width:     90ch        !important;
+#ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_Grid1_ctl00 th:nth-child(3),
+#ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_Grid1_ctl00 td:nth-child(3) {
+  max-width:     90ch      !important;
   white-space:   nowrap;
-  overflow:      hidden       !important;
-  text-overflow: ellipsis    !important;
+  overflow:      hidden    !important;
+  text-overflow: ellipsis  !important;
 }
+
 
 
 
