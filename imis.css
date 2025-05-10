@@ -118,102 +118,111 @@ table.rgMasterTable th.rgHeader span {
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
-/* 1) Turn every iQA2Col into a responsive grid */
-.iQA2Col {
-  display:           grid           !important;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
-  grid-gap:          1rem           !important;
-  align-items:       start          !important;
+/*─────────────────────────────────────────────────────────
+  1) RECORD‐PAGE PANELS (Member & Employer) 
+─────────────────────────────────────────────────────────*/
+.PanelField.Left {
+  display:        flex         !important;
+  flex-direction: column       !important;
+  align-items:    flex-start   !important;
+  gap:            5px          !important;
 }
 
-/* 2) Reset the old PanelField floats & widths */
-.iQA2Col .PanelField {
-  width:             auto           !important;
-  float:             none           !important;
-  clear:             none           !important;
-
-  /* keep your flex-based label+input stacking */
-  display:           flex           !important;
-  flex-direction:    column         !important;
-  align-items:       flex-start     !important;
-  gap:               0.25rem        !important;
-  margin:            0              !important;
+.PanelField.Left .Label,
+.PanelField.Left label {
+  font-size:  12px  !important;
+  display:    block  !important;
+  text-align: left   !important;
+  width:      100%   !important;
 }
 
-/* 3) Make sure each input/select still fills its cell */
-.iQA2Col .PanelFieldValue {
-  width:             100%           !important;
-  max-width:         none           !important;
-  box-sizing:        border-box     !important;
+.PanelField.Left .PanelFieldValue {
+  display:        flex         !important;
+  flex-wrap:      wrap         !important;
+  align-items:    center       !important;
+  gap:            5px          !important;
+  flex-grow:      1            !important;
+  min-width:      200px        !important;
+  max-width:      300px        !important;
+  width:          100%         !important;
+  box-sizing:     border-box   !important;
 }
 
-/* 4. Labels inside PanelField */
-.iQA2Col .PanelField label,
-.PanelField .Label,
-.PanelField label {
-  font-size:            12px          !important;
-  display:              block         !important;
-  text-align:           left          !important;
-  width:                100%          !important;
+.PanelField.Left .PanelFieldValue input,
+.PanelField.Left .PanelFieldValue select {
+  font-size:    12px        !important;
+  width:        100%        !important;
+  max-width:    100%        !important;
+  box-sizing:   border-box  !important;
 }
 
-/* 5. Text inputs & selects */
-.iQA2Col .PanelFieldValue input,
-.iQA2Col .PanelFieldValue select,
-.PanelFieldValue input,
-.PanelFieldValue select {
-  font-size:            12px          !important;
-  width:                100%          !important;
-  max-width:            100%          !important;
-  box-sizing:           border-box    !important;
+.PanelField.Left .PanelFieldValue input[type="image"] {
+  width:         20px     !important;
+  height:        20px     !important;
+  object-fit:    contain  !important;
+  float:         none     !important;
+  margin:        0        !important;
+  align-self:    center   !important;
 }
 
-/* 6. Image inputs */
-input[type="image"],
-.iQA2Col .PanelFieldValue input[type="image"],
-.PanelFieldValue input[type="image"] {
-  width:                20px          !important;
-  height:               20px          !important;
-  object-fit:           contain       !important;
-  float:                none          !important;
-  margin:               0             !important;
-  align-self:           center        !important;
+
+/*─────────────────────────────────────────────────────────
+  2) SEARCH/REPORT PANELS (any page with .iQA2Col) 
+─────────────────────────────────────────────────────────*/
+.iQA2Col .PanelField:not(.Left) {
+  display:        flex         !important;
+  flex-direction: column       !important;
+  align-items:    flex-start   !important;
+  gap:            5px          !important;
+
+  width:         33%           !important;
+  float:         left          !important;
+  clear:         none          !important;
 }
 
-/* 7. TextButton & Checkbox */
+.iQA2Col .PanelField:not(.Left) .Label,
+.iQA2Col .PanelField:not(.Left) label {
+  font-size:  12px  !important;
+  display:    block  !important;
+  text-align: left   !important;
+  width:      100%   !important;
+}
+
+.iQA2Col .PanelField:not(.Left) .PanelFieldValue {
+  flex-grow:   1           !important;
+  min-width:   200px       !important;
+  max-width:   300px       !important;
+  width:       100%        !important;
+  box-sizing:  border-box  !important;
+}
+
+.iQA2Col .PanelField:not(.Left) .PanelFieldValue input,
+.iQA2Col .PanelField:not(.Left) .PanelFieldValue select {
+  font-size:    12px        !important;
+  width:        100%        !important;
+  max-width:    100%        !important;
+  box-sizing:   border-box  !important;
+}
+
+.iQA2Col .PanelField:not(.Left) .PanelFieldValue input[type="image"] {
+  width:         20px     !important;
+  height:        20px     !important;
+  object-fit:    contain  !important;
+  float:         none     !important;
+  margin:        0        !important;
+  align-self:    center   !important;
+}
+
 .iQA2Col .TextButton {
-  float:                left          !important;
-  clear:                left          !important;
-}
-.CheckBoxList input[type="checkbox"] {
-  width:                10%           !important;
+  float: left !important;
+  clear: left !important;
 }
 
-/* 8. Panel titles */
+/* any other shared rules (e.g. .panel-title) can remain global */
 .panel-title {
-  font-size:            12px          !important;
-  text-align:           left          !important;
-  width:                100%          !important;
-}
-
-/* Member Details panel */
-#ste_container_MemberDetails .PanelField {
-  width:        auto   !important;
-  white-space:  nowrap !important;
-  word-break:   normal !important;
-}
-
-/* Org Details panel */
-#ste_container_OrgDetails .PanelField {
-  width:        auto   !important;
-  white-space:  nowrap !important;
-  word-break:   normal !important;
-}
-#ste_container_OrgLiveDetails .PanelField,
-#ste_container_OrgScreenDetails .PanelField {
-  width:        auto   !important;
-  white-space:  nowrap !important;
-  word-break:   normal !important;
+  font-size: 12px    !important;
+  text-align: left;
+  width:      100%;
 }
 
 /* =============================================================================================================================== */
