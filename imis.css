@@ -50,9 +50,7 @@
 
 /* 5. MetroTouch Scroll & Sort Overrides */
 .RadGrid_MetroTouch {
-  overflow-x:            auto        !important;
-  max-height:            600px       !important;
-	
+  overflow-x:            auto        !important;	
 }
 .RadGrid.RadGrid_MetroTouch th.rgSorted a {
   background:            none        !important;
