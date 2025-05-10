@@ -173,17 +173,19 @@ input[type="image"] {
 /* ══ 2) MEMBER & EMPLOYER RECORD PANELS (your original Group 2/3) ══ */
 /* These only hit the .Left panels—and since none of those are under .iQA2Col, they won’t affect your search forms */
 .PanelField.Left {
-  display:         flex            !important;
-  flex-direction:  column          !important;
-  align-items:     flex-start      !important;
-  gap:             5px             !important;
+  width:      100%        !important;  /* fill the entire cell */
+  display:    flex        !important;  /* re-affirm the flex layout */
+  flex-wrap:  wrap        !important;  /* allow the value area to wrap only */
+  gap:        5px         !important;  
+  box-sizing: border-box  !important;
 }
 .PanelField.Left .Label,
 .PanelField.Left label {
-  font-size:       12px            !important;
-  display:         block           !important;
-  text-align:      left            !important;
-  width:           100%            !important;
+  white-space:   nowrap    !important;  /* prevent “Organis / er” breaks */
+  display:       block     !important;
+  font-size:     12px      !important;
+  text-align:    left      !important;
+  width:         100%      !important;
 }
 .PanelField.Left .PanelFieldValue {
   font-size:       12px            !important;
