@@ -203,6 +203,25 @@ input[type="image"],
   width:                100%          !important;
 }
 
+/* Member Details panel */
+#ste_container_MemberDetails .iQA2Col .PanelField {
+  width:        auto   !important;
+  white-space:  nowrap !important;
+  word-break:   normal !important;
+}
+
+/* Org Details panel */
+#ste_container_OrgDetails .iQA2Col .PanelField {
+  width:        auto   !important;
+  white-space:  nowrap !important;
+  word-break:   normal !important;
+}
+#ste_container_OrgLiveDetails .iQA2Col .PanelField,
+#ste_container_OrgScreenDetails .iQA2Col .PanelField {
+  width:        auto   !important;
+  white-space:  nowrap !important;
+  word-break:   normal !important;
+}
 
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
