@@ -126,7 +126,7 @@ table.rgMasterTable th.rgHeader span {
 }
 
 /* 2. PanelField cards (3-column grid) */
-.iQA2Col .PanelField
+.iQA2Col {
   width:                33%           !important;
   float:                left          !important;
   clear:                none          !important;
