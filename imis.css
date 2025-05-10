@@ -48,20 +48,22 @@
   white-space: nowrap !important;
 }
 
-/* 5. MetroTouch grid wrapper: no scrolling here */
-.RadGrid_MetroTouch {
-  overflow: visible   !important;
-  max-height: none    !important;
+/* 5. MetroTouch grid wrapper: no scrollbars here */
+.RadGrid_MetroTouch,
+.RadGrid_MetroTouch .rgMasterTableWrapper {
+  overflow: visible !important;
+  max-height: none  !important;
 }
 
-/* 6. MasterTable: both scrollbars on the TABLE itself */
+/* 6. MasterTable: table itself gets both scrollbars */
 .RadGrid_MetroTouch .rgMasterTable {
-  display:       block      !important;  /* make the table a scrollable block */
-  width:         100%        !important; /* always fill its container */
-  max-height:    600px       !important; /* cap its height so it can scroll vertically */
-  overflow:      auto       !important;  /* show both x- and y-scrollbars as needed */
-  border-collapse: separate !important;  /* preserve your borders */
-  table-layout:  auto       !important;  /* natural column sizing */
+  display:       block      !important;
+  width:         100%        !important;
+  max-height:    600px       !important;
+  overflow-x:    auto        !important;
+  overflow-y:    auto        !important;
+  table-layout:  auto        !important;
+  border-collapse: separate !important;
 }
 
 /* 7. Sticky Header */
