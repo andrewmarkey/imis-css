@@ -118,12 +118,7 @@ table.rgMasterTable th.rgHeader span {
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
-/* 1. Two-column flex container */
-.iQA2Col {
-  display:              flex          !important;
-  flex-wrap:            wrap          !important;
-  box-sizing:           border-box    !important;
-}
+
 
 /* 2. PanelField cards (3-column grid) */
 .iQA2Col {
