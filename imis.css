@@ -118,36 +118,33 @@ table.rgMasterTable th.rgHeader span {
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
-
-
-/* 2. PanelField cards (3-column grid) */
+/* 1) Turn every iQA2Col into a responsive grid */
 .iQA2Col {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-  gap: 1rem !important;
-  box-sizing: border-box !important;
+  display:           grid           !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  grid-gap:          1rem           !important;
+  align-items:       start          !important;
 }
 
+/* 2) Reset the old PanelField floats & widths */
 .iQA2Col .PanelField {
-  width: auto    !important;
-  float: none    !important;
-  clear: none    !important;
+  width:             auto           !important;
+  float:             none           !important;
+  clear:             none           !important;
+
+  /* keep your flex-based label+input stacking */
+  display:           flex           !important;
+  flex-direction:    column         !important;
+  align-items:       flex-start     !important;
+  gap:               0.25rem        !important;
+  margin:            0              !important;
 }
 
-/* 3. PanelFieldValue container */
-.iQA2Col .PanelFieldValue,
-.PanelFieldValue {
-  display:              flex          !important;
-  flex-wrap:            wrap          !important;
-  align-items:          center        !important;
-  gap:                  5px           !important;
-
-  flex-grow:            1             !important;
-  width:                100%          !important;
-  min-width:            200px         !important;
-  max-width:            300px         !important;
-  box-sizing:           border-box    !important;
-  font-size:            12px          !important;
+/* 3) Make sure each input/select still fills its cell */
+.iQA2Col .PanelFieldValue {
+  width:             100%           !important;
+  max-width:         none           !important;
+  box-sizing:        border-box     !important;
 }
 
 /* 4. Labels inside PanelField */
