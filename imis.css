@@ -222,20 +222,7 @@ input[type="image"],
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
-.count-numbers {
-	font-size: 2rem !important;
-	line-height: 1 !important;
-}
 
-.staffdashboard {
-	font-size: 0.5rem !important;
-	margin-top: -10px !important;
-	margin-bottom: 20px;
-}
-
-.staffdashboard ul {
-	list-style: none !important;
-}
 
 .recentcontacts input {
 	font-size: 10px !important;
