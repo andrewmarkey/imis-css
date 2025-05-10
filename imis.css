@@ -57,13 +57,13 @@
 
 /* 6. MasterTable itself gets both scrollbars */
 .RadGrid_MetroTouch .rgMasterTable {
-  display:         block      !important;  /* allow its own scrollbars */
-  width:           100%        !important; /* fill its container */
-  height:          600px       !important; /* cap height so vertical scroll appears */
-  overflow-x:      auto        !important; /* horizontal scroll if needed */
-  overflow-y:      auto        !important; /* vertical scroll if needed */
-  table-layout:    auto        !important; /* natural column sizing */
-  border-collapse: separate   !important; /* keep your borders */
+  display:       block      !important;  /* make it scrollable */
+  width:         100%        !important; /* fill its container */
+  max-height:    600px       !important; /* cap height so vertical scroll appears when needed */
+  overflow-x:    auto        !important; /* horizontal scrollbar if needed */
+  overflow-y:    auto        !important; /* vertical scrollbar if needed */
+  table-layout:  auto        !important; /* natural column sizing */
+  border-collapse: separate !important;
 }
 
 /* 7. Sticky header remains intact */
