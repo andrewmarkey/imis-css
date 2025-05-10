@@ -321,3 +321,11 @@ td.AlertLabel {
 .RadTabStripTop_Orion {
 	font-size: 10px;
 }
+#ctl01_AccountArea_OBOToggleLI,
+#ctl01_Auxiliary_Auxiliary_rptWrapper_Auxiliary_rptWrapper_rpt_ctl01_NavigationListItem,
+#ctl01_Auxiliary_Auxiliary_rptWrapper_Auxiliary_rptWrapper_rpt_ctl02_NavigationListItem,
+#ctl01_Auxiliary_Auxiliary_rptWrapper_Auxiliary_rptWrapper_rpt_ctl02_NavigationListItem,
+#ctl01_Auxiliary_Auxiliary_rptWrapper_Auxiliary_rptWrapper_rpt_ctl03_NavigationListItem,
+#ctl01_ciRecentHistoryStatic__Head {
+	display:none
+}
