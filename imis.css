@@ -286,10 +286,12 @@ td.AlertLabel {
 	vertical-align: top;
 }
 
-.staffdashboard .AlertItem {
+/* only kill the shadow on the LIST-ITEM wrapper, not the cards inside it */
+#ctl01_TemplateBody_WebPartManager1_gwpciNewNotificationCommon2_ciNewNotificationCommon2_AlertContainer  
+  > ul > li.AlertItem {
 	box-shadow: none !important;
-	
 }
+
 
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
