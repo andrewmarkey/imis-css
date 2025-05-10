@@ -73,6 +73,7 @@
   max-width:     100%       !important;  /* never exceed the wrapper’s width */
   table-layout:  auto       !important;  /* let columns size themselves to content/wrapper */
   overflow-x:    auto       !important;  /* show an inner scrollbar if it really needs more room */
+  overflow-y:    auto       !important;
   max-height:    600px      !important;  /* preserve your “600px tall” MetroTouch behavior */
   border-collapse: separate !important;  /* keep your existing cell borders */
 }
