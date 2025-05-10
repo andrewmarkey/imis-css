@@ -121,15 +121,17 @@ table.rgMasterTable th.rgHeader span {
 
 
 /* 2. PanelField cards (3-column grid) */
+.iQA2Col {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  gap: 1rem !important;
+  box-sizing: border-box !important;
+}
+
 .iQA2Col .PanelField {
-  width:                33%           !important;
-  float:                left          !important;
-  clear:                none          !important;
-  display:              flex          !important;
-  flex-direction:       column        !important;
-  align-items:          flex-start    !important;
-  gap:                  5px           !important;
-  box-sizing:           border-box    !important;
+  width: auto    !important;
+  float: none    !important;
+  clear: none    !important;
 }
 
 /* 3. PanelFieldValue container */
