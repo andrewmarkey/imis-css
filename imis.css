@@ -228,7 +228,27 @@ input[type="image"] {
   text-align:      left;
   width:           100%;
 }
+/* 1) Prevent the inner <table> from ever adding its own vertical scrollbar */
+.RadGrid_MetroTouch .rgMasterTable {
+  overflow-y: hidden !important;
+}
 
+/* 2) If your outer wrapper (the panel/body around it) is also scrollable, make sure it only scrolls once */
+.RadAjaxPanel,
+.RadAjaxPanel > .rgMasterTable {
+  overflow-y: auto  !important;
+  max-height: none  !important;  /* let the panel grow rather than the table */
+}
+
+/* 3) Re-enforce your horizontal scroll on the table */
+.RadGrid_MetroTouch .rgMasterTable {
+  display:      block   !important;
+  width:        100%    !important;
+  overflow-x:   auto    !important;
+  table-layout: auto    !important;
+  /* max-height can remain if you want to cap its height */
+  max-height:   600px   !important;
+}
 
 
 /* =============================================================================================================================== */
