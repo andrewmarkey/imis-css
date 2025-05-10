@@ -3,19 +3,19 @@
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
-/* 1. Base Grid Resets */
+/* 1. Base grid resets */
 .RadGrid {
   font-size: 12px        !important;
   width:     100%        !important;
   border:    none        !important;
 }
 
-/* 1a. First header cell auto-width */
+/* 1a. Restore auto‐width on the very first header cell */
 .RadGrid .rgMasterTable tr > th:first-child {
   width: auto            !important;
 }
 
-/* 2. TextButton Links */
+/* 2. TextButton links */
 .RadGrid a.TextButton {
   font-size:   12px    !important;
   display:     inline-block !important;
@@ -27,7 +27,7 @@
   white-space: nowrap  !important;
 }
 
-/* 3. Cell & Row Styling */
+/* 3. Cell & row styling */
 .RadGrid .rgRow td,
 .RadGrid .rgAltRow td {
   border:          0.5px solid #ccc !important;
@@ -42,31 +42,31 @@
   cursor:           pointer  !important;
 }
 
-/* 4. Header Text nowrap */
+/* 4. Header text nowrap */
 .RadGrid .rgHeader,
 .RadGrid .rgHeader th {
   white-space: nowrap !important;
 }
 
-/* 5. MetroTouch grid wrapper: no scrollbars here */
+/* 5. MetroTouch wrapper — absolutely no scrolling here */
 .RadGrid_MetroTouch,
 .RadGrid_MetroTouch .rgMasterTableWrapper {
-  overflow: visible !important;
-  max-height: none  !important;
+  overflow:   visible !important;
+  max-height: none    !important;
 }
 
-/* 6. MasterTable: table itself gets both scrollbars */
+/* 6. MasterTable itself gets both scrollbars */
 .RadGrid_MetroTouch .rgMasterTable {
-  display:       block      !important;
-  width:         100%        !important;
-  max-height:    600px       !important;
-  overflow-x:    auto        !important;
-  overflow-y:    auto        !important;
-  table-layout:  auto        !important;
-  border-collapse: separate !important;
+  display:         block      !important;  /* allow its own scrollbars */
+  width:           100%        !important; /* fill its container */
+  height:          600px       !important; /* cap height so vertical scroll appears */
+  overflow-x:      auto        !important; /* horizontal scroll if needed */
+  overflow-y:      auto        !important; /* vertical scroll if needed */
+  table-layout:    auto        !important; /* natural column sizing */
+  border-collapse: separate   !important; /* keep your borders */
 }
 
-/* 7. Sticky Header */
+/* 7. Sticky header remains intact */
 .RadGrid_MetroTouch .rgHeader {
   position:      sticky      !important;
   top:           0           !important;
@@ -85,14 +85,14 @@
   color:      #fff !important;
 }
 
-/* 8. Cell Padding */
+/* 8. Cell padding */
 .RadGrid table.rgMasterTable th,
 .RadGrid table.rgMasterTable td {
-  padding:    2px 6px !important;
-  max-width: 100%     !important;
+  padding:   2px 6px !important;
+  max-width:100%     !important;
 }
 
-/* 9. Page-specific tweaks */
+/* 9. Page‐specific tweaks */
 #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_RunningTotals__Head,
 #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_ManageAdjustmentsCollection_Page_1 {
   margin-top: -20px;
@@ -109,6 +109,7 @@
   overflow:      hidden    !important;
   text-overflow: ellipsis  !important;
 }
+
 
 
 
