@@ -329,3 +329,20 @@ td.AlertLabel {
 #ctl01_ciRecentHistoryStatic__Head {
 	display:none
 }
+
+.TextButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_NewContentBigButtonPanel_LinkRepeater_ctl00_Link,
+.btn-primary
+{
+	font-size: 11px !important;
+	
+}
+
+.dropdown .caret-white {
+    background-position: -190px 0 !important;  
+}
+
+#AgentAllocateFrom, #RemoveFrom {
+	float: left;
+	
+}
