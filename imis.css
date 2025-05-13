@@ -3,6 +3,95 @@
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
+.RadGrid {
+	font-size: 11px !important;
+	
+}
+
+.RadGrid .rgMasterTable tr > th:first-child {
+	width: auto !important;
+}
+
+.RadGrid .rgRow td,
+.RadGrid .rgAltRow td {
+	border: 0.5px solid #ccc !important;
+	vertical-align: top !important;
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	word-break: break-word !important;
+	max-width: 300px !important;
+	
+}
+
+.RadGrid .rgRow:hover,
+.RadGrid .rgAltRow:hover {
+	background-color: #e6f7ff !important;
+	cursor: pointer !important;
+}
+
+.RadGrid .rgHeader,
+.RadGrid .rgHeader th {
+	vertical-align: top !important;
+	white-space: normal !important;
+	
+}
+
+.RadGrid.RadGrid_MetroTouch th.rgSorted a {
+	background: none !important;
+	color: white !important;
+}
+
+.RadGrid_MetroTouch .rgHeader .rgSortAsc,
+.RadGrid_MetroTouch .rgHeader .rgSortDesc {
+	float: none !important;
+	margin: 0 !important;
+}
+
+.RadGrid_MetroTouch .rgMasterTable {
+	max-height: 600px !important;
+}
+
+.RadGrid_MetroTouch .rgHeader {
+	position: sticky !important;
+	top: 0 !important;
+	z-index: 10 !important;
+	background: #3b6ba5 !important;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) !important;
+	transition: box-shadow 0.2s ease-in-out !important;
+	margin: 0 !important;
+	border-bottom: none !important;
+	
+
+}
+
+.RadGrid_MetroTouch .rgHeader a,
+table.rgMasterTable th.rgHeader a,
+table.rgMasterTable th.rgHeader span {
+	background: none !important;
+	color: #fff !important;
+}
+
+.RadGrid table.rgMasterTable th,
+.RadGrid table.rgMasterTable td {
+  padding:               2px 4px     !important;
+
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_RunningTotals__Head, #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_ManageAdjustmentsCollection_Page_1 {
+	margin-top: -20px;
+}
+#ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_Zone7PlaceHolder {
+	margin-top: -40px;
+	
+}
+.Interactions {
+	margin-top: -80px !important;
+	
+}
+.NewInteractions {
+    
+    float: right;
+}
 
 
 
