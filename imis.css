@@ -308,10 +308,8 @@ td.AlertLabel {
 
 .TextButton,
 #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_NewContentBigButtonPanel_LinkRepeater_ctl00_Link,
-.btn-primary
-{
+.btn-primary {
 	font-size: 11px !important;
-	
 }
 
 .dropdown .caret-white {
@@ -319,6 +317,8 @@ td.AlertLabel {
 }
 
 #AgentAllocateFrom, #RemoveFrom {
-	float: left;
-	
+	float: left;	
+}
+#ste_container_RaiseManualInvoiceBtn {
+	padding: 10px;
 }
