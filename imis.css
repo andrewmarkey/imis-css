@@ -322,3 +322,35 @@ td.AlertLabel {
 #ste_container_RaiseManualInvoiceBtn {
 	padding: 10px;
 }
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelField {
+	margin-top: -10px
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .group-heading {
+	margin-top: 15px !important;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelFieldValue input,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelFieldValue select,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelFieldValue .chosen-choice,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelFieldValue .chosen-choices {
+	font-size: 10px !important;
+	height: 30px !important;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelFieldValue .chosen-drop {
+	font-size: 10px !important;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelField label {
+margin-top: 5px;
+margin-bottom: -5px;
+}
+
+
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_DataSourcePanel_Body .PanelField input[type="image"] {
+	height: 20px !important;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	
+}
