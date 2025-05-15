@@ -243,7 +243,11 @@ td.ThreeColumns {
 #ctl01_TemplateBody_WebPartManager1_gwpciRecentcontacts_ciRecentcontacts__BodyContainer {
 	margin-top: -10px;
 }
-
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks__BodyContainer {
+	max-height: 200px !important;
+	overflow-y: auto !important;
+	overflow-x: auto !important;
+}
 
 
 /* =============================================================================================================================== */
