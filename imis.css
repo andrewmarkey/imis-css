@@ -439,3 +439,19 @@ margin-bottom: -5px;
     word-wrap: break-word;
     overflow-wrap: anywhere;
 }
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:first-child,
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(2),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(3),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(4),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(5),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(6),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(8),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(9),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(10),
+.Workbenches #ctl01_TemplateBody_WebPartManager1_gwpciNewQueryMenuCommon_ciNewQueryMenuCommon_ResultsGrid_GridPanel1 colgroup col:nth-child(11)
+{
+    width:8% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
