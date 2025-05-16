@@ -389,6 +389,37 @@ margin-bottom: -5px;
     width: 100% !important; 
 }
 
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body {
+	margin-top: -30px;
+	
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelFieldValue input,
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelFieldValue select,
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelFieldValue .chosen-choice,
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelFieldValue .chosen-choices {
+	font-size: 10px !important;
+	height: 30px !important;	
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelFieldValue .chosen-drop {
+	font-size: 10px !important;
+}
+
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelField label {
+margin-top: 5px;
+margin-bottom: -5px;
+}
+
+
+#ctl01_TemplateBody_WebPartManager1_gwpciMyCases_ciMyCases_MyCases_ResultsGrid_DataSourcePanel_Body .PanelField input[type="image"] {
+	height: 20px !important;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	
+}
+
+
 #ctl01_TemplateBody_WebPartManager1_gwpciSearchCases_ciSearchCases_ResultsGrid_Grid1_ctl00 colgroup col:first-child,
 #ctl01_TemplateBody_WebPartManager1_gwpciSearchCases_ciSearchCases_ResultsGrid_Grid1_ctl00 colgroup col:nth-child(2),
 #ctl01_TemplateBody_WebPartManager1_gwpciSearchCases_ciSearchCases_ResultsGrid_Grid1_ctl00 colgroup col:nth-child(3),
