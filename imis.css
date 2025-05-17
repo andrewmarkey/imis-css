@@ -455,3 +455,8 @@ margin-bottom: -5px;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
 }
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid a.btn,
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid button {
+    color: white !important;
+    text-decoration: none !important;
+}
