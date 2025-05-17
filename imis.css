@@ -244,7 +244,7 @@ td.ThreeColumns {
 	margin-top: -10px;
 }
 #ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks__BodyContainer {
-	max-height: 200px !important;
+	max-height: 320px !important;
 	overflow-y: auto !important;
 	overflow-x: auto !important;
 }
