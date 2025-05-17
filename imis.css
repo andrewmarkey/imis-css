@@ -455,6 +455,19 @@ margin-bottom: -5px;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
 }
+
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid_Grid1_ctl00 colgroup col:first-child,
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid_Grid1_ctl00 colgroup col:nth-child(2),
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid_Grid1_ctl00 colgroup col:nth-child(4),
+#ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid_Grid1_ctl00 colgroup col:nth-child(5)
+
+{
+    width:8% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
 #ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid a.btn,
 #ctl01_TemplateBody_WebPartManager1_gwpciMyTasks_ciMyTasks_ResultsGrid button {
     color: white !important;
