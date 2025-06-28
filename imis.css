@@ -192,7 +192,7 @@
 	
 }
 .RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
-    color: #fff;
+    color: #fff !important;
     background-color: #3b6ba5 !important;
 }
 .Interactions {
