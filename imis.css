@@ -5,16 +5,137 @@
 /* =============================================================================================================================== */
 /* =============================================================================================================================== */
 
-	
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_radTab_Top {
+	font-size: 1.2rem !important;
+	font-weight: 600;
+}
+
 .RadGrid {
-	font-size: 11px !important;
-	
+	border-radius: 4px;
+	overflow-x: auto;
+	border: none !important;
+	padding: 2px;
 }
 
-.RadGrid .rgMasterTable tr > th:first-child {
-	width: auto !important;
+/*—— The actual table styling ——*/
+.RadGrid .rgMasterTable {
+	table-layout: auto !important;
+	min-width: 100% !important;
+	border-collapse: separate;
+	border-spacing: 0 10px !important;
 }
 
+/*—— Table head ——*/
+.RadGrid .rgMasterTable thead tr,
+.RadGrid .rgMasterTable thead th {
+	border-top: none;
+	border-bottom: none !important;
+	padding: 6px 6px !important;
+	font-size: 11px;
+	letter-spacing: .1rem;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/*—— Table body cells ——*/
+.RadGrid .rgMasterTable tbody th,
+.RadGrid .rgMasterTable tbody td {
+	color: #000;
+	font-weight: 300;
+	padding: 6px 6px !important;
+	border: 1px !important;
+	background-color: #f5f5f5 !important;
+}
+
+/*—— Minor text inside cells ——*/
+.RadGrid .rgMasterTable tbody th small,
+.RadGrid .rgMasterTable tbody td small {
+	color: #b3b3b3;
+	font-weight: 300;
+}
+
+/*—— Rounded rows with hover shadow ——*/
+.RadGrid .rgMasterTable tbody tr {
+	border-radius: 7px;
+	overflow: hidden;
+	transition: .3s all ease;
+}
+.RadGrid .rgMasterTable tbody tr:hover {
+	box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*—— White background & no inner cell borders ——*/
+.RadGrid .rgMasterTable tbody tr th,
+.RadGrid .rgMasterTable tbody tr td {
+	background: #fff;
+	border: none;
+}
+
+/*—— Round the first and last cells in each row ——*/
+.RadGrid .rgMasterTable tbody tr th:first-child,
+.RadGrid .rgMasterTable tbody tr td:first-child {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.RadGrid .rgMasterTable tbody tr th:last-child,
+.RadGrid .rgMasterTable tbody tr td:last-child {
+	border-top-right-radius: 7px !important;
+	border-bottom-right-radius: 7px;
+}
+
+/*—— Spacer rows ——*/
+.RadGrid .rgMasterTable tbody tr.spacer td {
+	padding: 0 !important;
+	height: 10px;
+	border-radius: 0 !important;
+	background: transparent !important;
+}
+
+/*—— Active-row opacity ——*/
+.RadGrid .rgMasterTable tbody tr.active {
+	opacity: .4;
+}
+
+/* Round the top-left corner of the very first header cell */
+.RadGrid_MetroTouch .rgMasterTable thead tr > th:first-child {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+.RadGrid_MetroTouch .rgMasterTable tr > th:nth-last-child(2),
+.RadGrid_MetroTouch .rgMasterTable tr > td:nth-last-child(2) {
+	width: 90px !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+}
+/* Round the top-right corner of the visible last header cell */
+.RadGrid .rgRow:hover,
+.RadGrid .rgAltRow:hover {
+	cursor: default !important;
+}
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_GoToPageLinkButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeLinkButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_GoToPageLinkButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_ChangePageSizeLinkButton {
+	font-size: 1.2rem;
+	border-radius: 7px;
+	width: 60px;
+	margin-left: 10px !important;
+}
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeTextBox_wrapper,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox {
+	width: 50px !important;
+}
+.RadGrid .rgHeader.rgExpandCol {
+	text-indent: -9999px !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+}
+.RadGrid .rgDetailTable .rgHeader th,
+.RadGrid .rgDetailTable thead th {
+	color: #000 !important;
+	background-color: #f5f5f5 !important;
+	text-shadow: none !important;
+}
 .RadGrid .rgRow td,
 .RadGrid .rgAltRow td {
 	border: 0.5px solid #ccc !important;
@@ -23,20 +144,12 @@
 	word-wrap: break-word !important;
 	word-break: break-word !important;
 	max-width: 300px !important;
-	
-}
-
-.RadGrid .rgRow:hover,
-.RadGrid .rgAltRow:hover {
-	background-color: #e6f7ff !important;
-	cursor: pointer !important;
 }
 
 .RadGrid .rgHeader,
 .RadGrid .rgHeader th {
 	vertical-align: top !important;
 	white-space: normal !important;
-	
 }
 
 .RadGrid.RadGrid_MetroTouch th.rgSorted a {
@@ -63,21 +176,13 @@
 	transition: box-shadow 0.2s ease-in-out !important;
 	margin: 0 !important;
 	border-bottom: none !important;
-	
-
 }
 
-.RadGrid_MetroTouch .rgHeader a,
-table.rgMasterTable th.rgHeader a,
-table.rgMasterTable th.rgHeader span {
-	background: none !important;
-	color: #fff !important;
-}
-
-.RadGrid table.rgMasterTable th,
-.RadGrid table.rgMasterTable td {
-  padding:               2px 4px     !important;
-
+.RadGrid .rgDetailTable .rgHeader th,
+.RadGrid .rgDetailTable thead th {
+	color: #000 !important;
+	background-color: #3b6ba5 !important;
+	text-shadow: none !important;
 }
 
 #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_RunningTotals__Head, #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_ManageAdjustmentsCollection_Page_1 {
