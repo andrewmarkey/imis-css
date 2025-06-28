@@ -133,7 +133,6 @@
 .RadGrid .rgDetailTable .rgHeader th,
 .RadGrid .rgDetailTable thead th {
 	color: #000 !important;
-	background-color: #f5f5f5 !important;
 	text-shadow: none !important;
 }
 .RadGrid .rgRow td,
