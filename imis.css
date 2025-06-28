@@ -33,7 +33,7 @@
 	border-top: none;
 	border-bottom: none !important;
 	padding: 6px 6px !important;
-	font-size: 10px;
+	font-size: 10px !important;
 	letter-spacing: .1rem;
 	border: none !important;
 	box-shadow: none !important;
@@ -47,6 +47,7 @@
 	padding: 6px 6px !important;
 	border: 1px !important;
 	background-color: #f5f5f5 !important;
+	font-size: 10px !important;
 }
 
 /*—— Minor text inside cells ——*/
@@ -54,6 +55,7 @@
 .RadGrid .rgMasterTable tbody td small {
 	color: #b3b3b3;
 	font-weight: 300;
+	font-size: 10px !important;
 }
 
 /*—— Rounded rows with hover shadow ——*/
@@ -85,13 +87,6 @@
 	border-bottom-right-radius: 7px;
 }
 
-/*—— Spacer rows ——*/
-.RadGrid .rgMasterTable tbody tr.spacer td {
-	padding: 0 !important;
-	height: 10px;
-	border-radius: 0 !important;
-	background: transparent !important;
-}
 
 /*—— Active-row opacity ——*/
 .RadGrid .rgMasterTable tbody tr.active {
