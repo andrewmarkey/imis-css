@@ -191,6 +191,10 @@
 	margin-top: -40px;
 	
 }
+.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
+    color: #fff;
+    background-color: #3b6ba5 !important;
+}
 .Interactions {
 	margin-top: -80px !important;
 	
