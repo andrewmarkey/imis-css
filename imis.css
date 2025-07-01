@@ -61,7 +61,10 @@
 	white-space: normal !important;
 	vertical-align: top !important;
 }
-
+.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
+	background-color: transparent !important;
+	color: #fff !important;
+}
 /*----------------------------------
   5. Body Cell Styling
 ----------------------------------*/
