@@ -109,19 +109,6 @@
 .RadGrid .rgAltRow:hover {
 	cursor: default !important;
 }
-#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_GoToPageLinkButton,
-#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeLinkButton,
-#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_GoToPageLinkButton,
-#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_ChangePageSizeLinkButton {
-	font-size: 1.2rem;
-	border-radius: 7px;
-	width: 60px;
-	margin-left: 10px !important;
-}
-#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeTextBox_wrapper,
-#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox {
-	width: 50px !important;
-}
 .RadGrid .rgHeader.rgExpandCol {
 	text-indent: -9999px !important;
 	white-space: nowrap !important;
@@ -141,28 +128,23 @@
 	word-break: break-word !important;
 	max-width: 300px !important;
 }
-
 .RadGrid .rgHeader,
 .RadGrid .rgHeader th {
 	vertical-align: top !important;
 	white-space: normal !important;
 }
-
 .RadGrid.RadGrid_MetroTouch th.rgSorted a {
 	background: none !important;
 	color: white !important;
 }
-
 .RadGrid_MetroTouch .rgHeader .rgSortAsc,
 .RadGrid_MetroTouch .rgHeader .rgSortDesc {
 	float: none !important;
 	margin: 0 !important;
 }
-
 .RadGrid_MetroTouch .rgMasterTable {
 	max-height: 600px !important;
 }
-
 .RadGrid_MetroTouch .rgHeader {
 	position: sticky !important;
 	top: 0 !important;
@@ -173,14 +155,29 @@
 	margin: 0 !important;
 	border-bottom: none !important;
 }
-
 .RadGrid .rgDetailTable .rgHeader th,
 .RadGrid .rgDetailTable thead th {
 	color: #000 !important;
 	background-color: #3b6ba5 !important;
 	text-shadow: none !important;
 }
-
+.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
+    color: #fff !important;
+    background-color: #3b6ba5 !important;
+}
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_GoToPageLinkButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeLinkButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_GoToPageLinkButton,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_ChangePageSizeLinkButton {
+	font-size: 1.2rem;
+	border-radius: 7px;
+	width: 60px;
+	margin-left: 10px !important;
+}
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeTextBox_wrapper,
+#ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_ChangePageSizeTextBox {
+	width: 50px !important;
+}
 #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_RunningTotals__Head, #ctl01_TemplateBody_WebPartManager1_gwpciAccountPageTabs_ciAccountPageTabs_ManageAdjustmentsCollection_Page_1 {
 	margin-top: -20px;
 }
@@ -188,10 +185,7 @@
 	margin-top: -40px;
 	
 }
-.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
-    color: #fff !important;
-    background-color: #3b6ba5 !important;
-}
+
 .Interactions {
 	margin-top: -80px !important;
 	
