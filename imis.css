@@ -119,13 +119,11 @@
 }
 
 /* Round the corners of first/last cell in each row */
-.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr th:first-child,
 .RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr td:first-child {
 	border-top-left-radius: 0px !important;
 	border-bottom-left-radius: 0px !important;
 }
 
-.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr th:last-child,
 .RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr td:last-child {
 	border-top-right-radius: 0px !important;
 	border-bottom-right-radius: 0px !important;
