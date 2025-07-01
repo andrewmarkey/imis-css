@@ -12,158 +12,171 @@
 	font-weight: 600;
 }
 
-.RadGrid {
-	border-radius: 4px;
-	overflow-x: auto;
-	border: none !important;
-	padding: 2px;
+:root {
+	--rg-radius: 7px !important;
+	--rg-border-radius: 4px !important;
+	--rg-header-bg: #3b6ba5 !important;
+	--rg-header-color: #fff !important;
+	--rg-row-bg: #fff !important;
+	--rg-alt-row-bg: #f5f5f5 !important;
+	--rg-border-color: #ccc !important;
+	--rg-hover-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
-/*—— The actual table styling ——*/
-.RadGrid .rgMasterTable {
+/*----------------------------------
+  2. Base .RadGrid Container
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch {
+	border-radius: var(--rg-border-radius) !important;
+	overflow-x: auto !important;
+	border: none !important;
+	padding: 2px !important;
+}
+
+/*----------------------------------
+  3. MasterTable Layout
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch .rgMasterTable {
 	table-layout: auto !important;
 	min-width: 100% !important;
-	border-collapse: separate;
+	border-collapse: separate !important;
 	border-spacing: 0 10px !important;
-}
-
-/*—— Table head ——*/
-.RadGrid .rgMasterTable thead tr,
-.RadGrid .rgMasterTable thead th {
-	border-top: none;
-	border-bottom: none !important;
-	padding: 6px 6px !important;
-	font-size: 10px !important;
-	letter-spacing: .1rem;
-	border: none !important;
-	box-shadow: none !important;
-}
-
-/*—— Table body cells ——*/
-.RadGrid .rgMasterTable tbody th,
-.RadGrid .rgMasterTable tbody td {
-	color: #000;
-	font-weight: 300;
-	padding: 6px 6px !important;
-	border: 1px !important;
-	background-color: #f5f5f5 !important;
-	font-size: 10px !important;
-}
-
-/*—— Minor text inside cells ——*/
-.RadGrid .rgMasterTable tbody th small,
-.RadGrid .rgMasterTable tbody td small {
-	color: #b3b3b3;
-	font-weight: 300;
-	font-size: 10px !important;
-}
-
-/*—— Rounded rows with hover shadow ——*/
-.RadGrid .rgMasterTable tbody tr {
-	border-radius: 7px;
-	overflow: hidden;
-	transition: .3s all ease;
-}
-.RadGrid .rgMasterTable tbody tr:hover {
-	box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
-}
-
-/*—— White background & no inner cell borders ——*/
-.RadGrid .rgMasterTable tbody tr th,
-.RadGrid .rgMasterTable tbody tr td {
-	background: #fff;
-	border: none;
-}
-
-/*—— Round the first and last cells in each row ——*/
-.RadGrid .rgMasterTable tbody tr th:first-child,
-.RadGrid .rgMasterTable tbody tr td:first-child {
-	border-top-left-radius: 7px;
-	border-bottom-left-radius: 7px;
-}
-.RadGrid .rgMasterTable tbody tr th:last-child,
-.RadGrid .rgMasterTable tbody tr td:last-child {
-	border-top-right-radius: 7px !important;
-	border-bottom-right-radius: 7px;
-}
-
-
-/*—— Active-row opacity ——*/
-.RadGrid .rgMasterTable tbody tr.active {
-	opacity: .4;
-}
-
-/* Round the top-left corner of the very first header cell */
-.RadGrid_MetroTouch .rgMasterTable thead tr > th:first-child {
-	border-top-left-radius: 7px;
-	border-bottom-left-radius: 7px;
-}
-.RadGrid_MetroTouch .rgMasterTable tr > th:nth-last-child(2),
-.RadGrid_MetroTouch .rgMasterTable tr > td:nth-last-child(2) {
-	width: 90px !important;
-	white-space: nowrap !important;
-	overflow: hidden !important;
-}
-/* Round the top-right corner of the visible last header cell */
-.RadGrid .rgRow:hover,
-.RadGrid .rgAltRow:hover {
-	cursor: default !important;
-}
-.RadGrid .rgHeader.rgExpandCol {
-	text-indent: -9999px !important;
-	white-space: nowrap !important;
-	overflow: hidden !important;
-}
-.RadGrid .rgDetailTable .rgHeader th,
-.RadGrid .rgDetailTable thead th {
-	color: #000 !important;
-	text-shadow: none !important;
-}
-.RadGrid .rgRow td,
-.RadGrid .rgAltRow td {
-	border: 0.5px solid #ccc !important;
-	vertical-align: top !important;
-	white-space: normal !important;
-	word-wrap: break-word !important;
-	word-break: break-word !important;
-	max-width: 300px !important;
-}
-.RadGrid .rgHeader,
-.RadGrid .rgHeader th {
-	vertical-align: top !important;
-	white-space: normal !important;
-}
-.RadGrid.RadGrid_MetroTouch th.rgSorted a {
-	background: none !important;
-	color: white !important;
-}
-.RadGrid_MetroTouch .rgHeader .rgSortAsc,
-.RadGrid_MetroTouch .rgHeader .rgSortDesc {
-	float: none !important;
-	margin: 0 !important;
-}
-.RadGrid_MetroTouch .rgMasterTable {
 	max-height: 600px !important;
 }
-.RadGrid_MetroTouch .rgHeader {
+
+/*----------------------------------
+  4. Header Styling
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch .rgMasterTable thead th {
 	position: sticky !important;
 	top: 0 !important;
 	z-index: 10 !important;
-	background: #3b6ba5 !important;
+	padding: 6px !important;
+	font-size: 10px !important;
+	letter-spacing: .1rem !important;
+	background: var(--rg-header-bg) !important;
+	color: var(--rg-header-color) !important;
+	border: none !important;
 	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3) !important;
-	transition: box-shadow 0.2s ease-in-out !important;
-	margin: 0 !important;
-	border-bottom: none !important;
+	white-space: normal !important;
+	vertical-align: top !important;
 }
-.RadGrid .rgDetailTable .rgHeader th,
-.RadGrid .rgDetailTable thead th {
-	color: #000 !important;
-	background-color: #3b6ba5 !important;
+
+/*----------------------------------
+  5. Body Cell Styling
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody th,
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody td {
+	padding: 6px !important;
+	font-size: 10px !important;
+	font-weight: 300 !important;
+	background: var(--rg-row-bg) !important;
+	border: 0.5px solid var(--rg-border-color) !important;
+	vertical-align: top !important;
+	word-break: break-word !important;
+	max-width: 300px !important;
+	background-color: #fafafa !important;
+}
+
+/* Minor / Secondary text */
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody td small {
+	color: #b3b3b3 !important;
+	font-size: 10px !important;
+}
+
+/*----------------------------------
+  6. Row Styles & Hover
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr {
+	border-radius: var(--rg-radius) !important;
+	overflow: hidden !important;
+	transition: box-shadow .3s ease !important;
+		box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.1) !important;
+}
+
+.RadGrid.RadGrid_MetroTouch .rgMasterTable .rgAltRow {
+	background-color: var(--rg-alt-row-bg) !important;
+}
+
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr:not(.rgAltRow) {
+	background-color: var(--rg-row-bg) !important;
+}
+
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr:hover {
+	box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.4) !important;
+	cursor: default !important;
+}
+
+/* Round the corners of first/last cell in each row */
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr th:first-child,
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr td:first-child {
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr th:last-child,
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr td:last-child {
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+/* Active-row opacity */
+.RadGrid.RadGrid_MetroTouch .rgMasterTable tbody tr.active {
+	opacity: .4 !important;
+}
+
+/*----------------------------------
+  7. Sorting & Selection
+----------------------------------*/
+/* Sorted header link */
+.RadGrid.RadGrid_MetroTouch .rgMasterTable th.rgSorted a {
+	background: none !important;
+	color: var(--rg-header-color) !important;
+}
+
+/* Selected row/cell */
+.RadGrid.RadGrid_MetroTouch .rgSelectedRow,
+.RadGrid.RadGrid_MetroTouch .rgSelectedCell {
+	background-color: var(--rg-header-bg) !important;
+	border-color: var(--rg-header-bg) !important;
+}
+
+.RadGrid.RadGrid_MetroTouch .rgSelectedRow a,
+.RadGrid.RadGrid_MetroTouch .rgSelectedCell a {
+	color: var(--rg-header-color) !important;
+}
+
+/*----------------------------------
+  8. Pager & Command Buttons
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch .rgPager .rgPagerButton,
+.RadGrid.RadGrid_MetroTouch input.rgAdd,
+.RadGrid.RadGrid_MetroTouch input.rgRefresh,
+.RadGrid.RadGrid_MetroTouch .rgSave,
+.RadGrid.RadGrid_MetroTouch .rgCancel {
+	background: var(--rg-header-bg) !important;
+	border-color: var(--rg-header-bg) !important;
+	color: var(--rg-header-color) !important;
+	transition: background .2s, color .2s !important;
+}
+
+.RadGrid.RadGrid_MetroTouch input.rgAdd:hover,
+.RadGrid.RadGrid_MetroTouch input.rgRefresh:hover,
+.RadGrid.RadGrid_MetroTouch .rgSave:hover,
+.RadGrid.RadGrid_MetroTouch .rgCancel:hover,
+.RadGrid.RadGrid_MetroTouch .rgPager .rgPagerButton:hover {
+	background: var(--rg-row-bg) !important;
+	color: var(--rg-header-bg) !important;
+}
+
+/*----------------------------------
+  9. DetailTable Header
+----------------------------------*/
+.RadGrid.RadGrid_MetroTouch .rgDetailTable thead th,
+.RadGrid.RadGrid_MetroTouch .rgDetailTable .rgHeader th {
+	background: var(--rg-header-bg) !important;
+	color: #fff !important;
 	text-shadow: none !important;
-}
-.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
-    color: #fff !important;
-    background-color: #3b6ba5 !important;
 }
 #ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_GoToPageLinkButton,
 #ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeLinkButton,
