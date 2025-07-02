@@ -152,7 +152,7 @@
 
 .RadGrid.RadGrid_MetroTouch .rgSelectedRow a,
 .RadGrid.RadGrid_MetroTouch .rgSelectedCell a {
-	color: var(--rg-header-color) !important;
+  color: inherit !important;
 }
 
 /*----------------------------------
