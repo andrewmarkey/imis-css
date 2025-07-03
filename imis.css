@@ -198,6 +198,17 @@
 	white-space: nowrap !important;
 	overflow: hidden !important;
 }
+
+.RadGrid_MetroTouch .rgHeader, .RadGrid_MetroTouch .rgHeader a {
+	background-color: transparent !important;
+}
+th.rgHeader.rgExpandCol {
+ 	text-indent: -9999px !important;
+  	white-space: nowrap !important;
+  	overflow: hidden !important;
+}
+
+	
 #ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_GoToPageLinkButton,
 #ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl02_ctl00_ChangePageSizeLinkButton,
 #ctl01_TemplateBody_WebPartManager1_gwpciDirectory_ciDirectory_PeopleSearch_ResultsGrid_Grid1_ctl00_ctl03_ctl01_GoToPageLinkButton,
