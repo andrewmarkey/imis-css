@@ -297,48 +297,64 @@ input[type="image"] {
   width:           10%!important;
 }
 
-.PanelField.Left {
-  width:      100%        !important;  
-  display:    flex        !important; 
-  flex-wrap:  wrap        !important;  
-  gap:        5px         !important;  
-  box-sizing: border-box  !important;
-}
-.PanelField.Left .Label,
-.PanelField.Left label {
-  white-space:   nowrap    !important;  
-  display:       block     !important;
-  font-size:     12px      !important;
-  text-align:    left      !important;
-  width:         100%      !important;
-}
-.PanelField.Left .PanelFieldValue {
-  font-size:       12px            !important;
-  display:         flex            !important;
-  flex-wrap:       wrap            !important;
-  align-items:     center          !important;
-  gap:             5px             !important;
-  flex-grow:       1               !important;
-  min-width:       200px           !important;
-  max-width:       300px           !important;
-  width:           100%            !important;
-  box-sizing:      border-box      !important;
-}
-.PanelField.Left .PanelFieldValue input,
-.PanelField.Left .PanelFieldValue select {
-  font-size:       12px            !important;
-  width:           100%            !important;
-  max-width:       100%            !important;
-  box-sizing:      border-box      !important;
-}
-.PanelField.Left .PanelFieldValue input[type="image"] {
-  width:           20px            !important;
-  height:          20px            !important;
-  object-fit:      contain         !important;
-  float:           none            !important;
-  margin:          0               !important;
-  align-self:      center          !important;
-}
+  .PanelField.Left {
+    width:      100%        !important;
+    display:    flex        !important;
+    flex-wrap:  wrap        !important;
+    gap:        5px         !important;
+    box-sizing: border-box  !important;
+  }
+
+  .PanelField.Left .Label,
+  .PanelField.Left label:not([for*="WorkbenchID"]):not([for*="ID$"]) {
+    white-space:   nowrap    !important;
+    display:       block     !important;
+    font-size:     12px      !important;
+    text-align:    left      !important;
+    width:         100%      !important;
+  }
+
+  /* Specifically override checkbox labels */
+  .PanelField.Left label[for*="WorkbenchID"],
+  .PanelField.Left label[for*="ID$"] {
+    display: inline !important;
+    width: auto !important;
+  }
+
+  .PanelField.Left .PanelFieldValue {
+    font-size:       12px            !important;
+    display:         flex            !important;
+    flex-wrap:       wrap            !important;
+    align-items:     center          !important;
+    gap:             5px             !important;
+    flex-grow:       1               !important;
+    min-width:       200px           !important;
+    max-width:       300px           !important;
+    width:           100%            !important;
+    box-sizing:      border-box      !important;
+  }
+
+  .PanelField.Left .PanelFieldValue input:not([type="checkbox"]),
+  .PanelField.Left .PanelFieldValue select {
+    font-size:       12px            !important;
+    width:           100%            !important;
+    max-width:       100%            !important;
+    box-sizing:      border-box      !important;
+  }
+
+  .PanelField.Left .PanelFieldValue input[type="checkbox"] {
+    width: auto !important;
+    margin-right: 5px !important;
+  }
+
+  .PanelField.Left .PanelFieldValue input[type="image"] {
+    width:           20px            !important;
+    height:          20px            !important;
+    object-fit:      contain         !important;
+    float:           none            !important;
+    margin:          0               !important;
+    align-self:      center          !important;
+  }
 
 .panel-title {
   font-size:       12px            !important;
