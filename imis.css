@@ -625,13 +625,17 @@ margin-bottom: -5px;
     color: white !important;
     text-decoration: none !important;
 }
-#ctl01_TemplateBody_WebPartManager1_gwpciPersonalProfileMembershipPortal_ciPersonalProfileMembershipPortal_AlertContainer,
-#ctl01_TemplateBody_WebPartManager1_gwpciProfileAlert_ciProfileAlert_AlertContainer {
+#ctl01_TemplateBody_WebPartManager1_gwpciPersonalProfileMembershipPortal_ciPersonalProfileMembershipPortal_AlertContainer {
 	width: 120%;
 	margin-top: -55px;
 	
 }
 
+#ctl01_TemplateBody_WebPartManager1_gwpciProfileAlert_ciProfileAlert_AlertContainer {
+	width: 120%;
+	margin-top: -5px;
+	
+}
 #ctl01_TemplateBody_WebPartManager1_gwpciQuickActions_e615b60cfde64f10b5498c73ac365ad5_ciQuickActions_e615b60cfde64f10b5498c73ac365ad5_Panel_QuickActions {
 	margin-left: 14px;
 margin-bottom: 3px;	
