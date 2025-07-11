@@ -625,7 +625,8 @@ margin-bottom: -5px;
     color: white !important;
     text-decoration: none !important;
 }
-#ctl01_TemplateBody_WebPartManager1_gwpciPersonalProfileMembershipPortal_ciPersonalProfileMembershipPortal_AlertContainer {
+#ctl01_TemplateBody_WebPartManager1_gwpciPersonalProfileMembershipPortal_ciPersonalProfileMembershipPortal_AlertContainer,
+#ctl01_TemplateBody_WebPartManager1_gwpciProfileAlert_ciProfileAlert_AlertContainer {
 	width: 120%;
 	margin-top: -55px;
 	
