@@ -84,8 +84,7 @@
 	background: var(--rg-row-bg) !important;
 	border: 0.5px solid var(--rg-border-color) !important;
 	vertical-align: top !important;
-	word-break: break-word !important;
-	max-width: 300px !important;
+	max-width: 100px !important;
 	background-color: #fcfcfc !important;
 }
 
